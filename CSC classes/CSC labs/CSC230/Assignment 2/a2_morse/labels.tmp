@@ -1,0 +1,80 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega2560</DEVICE>
+ <WORKING_DIR>H:\CSC230\Assignment 2\a2_morse</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m2560def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <TESTBUFFER><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>599</LINE></TESTBUFFER>
+  <MESSAGE02><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>582</LINE></MESSAGE02>
+  <BUFFER01><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>597</LINE></BUFFER01>
+  <encode_message><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>346</LINE></encode_message>
+  <main_loop><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>134</LINE></main_loop>
+  <flash_message><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>157</LINE></flash_message>
+  <stop><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>145</LINE></stop>
+  <mem_loop><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>176</LINE></mem_loop>
+  <end><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>183</LINE></end>
+  <morse_flash><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>197</LINE></morse_flash>
+  <special_case><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>261</LINE></special_case>
+  <shift_loop><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>210</LINE></shift_loop>
+  <loop4><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>218</LINE></loop4>
+  <contd><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>225</LINE></contd>
+  <loop1><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>226</LINE></loop1>
+  <case_short><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>242</LINE></case_short>
+  <case_long><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>232</LINE></case_long>
+  <leds_on><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>274</LINE></leds_on>
+  <delay_long><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>501</LINE></delay_long>
+  <leds_off><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>336</LINE></leds_off>
+  <continue><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>250</LINE></continue>
+  <delay_short><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>507</LINE></delay_short>
+  <case1><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>288</LINE></case1>
+  <case2><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>296</LINE></case2>
+  <case3><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>304</LINE></case3>
+  <case4><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>312</LINE></case4>
+  <case5><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>320</LINE></case5>
+  <case6><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>328</LINE></case6>
+  <character_loop><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>371</LINE></character_loop>
+  <read><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>380</LINE></read>
+  <letter_to_code><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>399</LINE></letter_to_code>
+  <ITU_MORSE><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>553</LINE></ITU_MORSE>
+  <special><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>468</LINE></special>
+  <start_encoding><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>438</LINE></start_encoding>
+  <letter_loop><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>432</LINE></letter_loop>
+  <encoding><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>441</LINE></encoding>
+  <case_dot><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>450</LINE></case_dot>
+  <case_dash><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>445</LINE></case_dash>
+  <done><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>453</LINE></done>
+  <increment><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>459</LINE></increment>
+  <skip1><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>473</LINE></skip1>
+  <delay><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>514</LINE></delay>
+  <delay_busywait><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>522</LINE></delay_busywait>
+  <delay_busywait_loop1><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>528</LINE></delay_busywait_loop1>
+  <delay_busywait_exit><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>543</LINE></delay_busywait_exit>
+  <delay_busywait_loop2><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>533</LINE></delay_busywait_loop2>
+  <delay_busywait_loop3><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>538</LINE></delay_busywait_loop3>
+  <MESSAGE01><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>581</LINE></MESSAGE01>
+  <MESSAGE03><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>583</LINE></MESSAGE03>
+  <MESSAGE04><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>584</LINE></MESSAGE04>
+  <MESSAGE05><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>585</LINE></MESSAGE05>
+  <MESSAGE06><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>586</LINE></MESSAGE06>
+  <MESSAGE07><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>587</LINE></MESSAGE07>
+  <MESSAGE08><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>588</LINE></MESSAGE08>
+  <MESSAGE09><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>589</LINE></MESSAGE09>
+  <MESSAGE10><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>592</LINE></MESSAGE10>
+  <BUFFER02><FILE>H:\CSC230\Assignment 2\a2_morse\a2_morse.asm</FILE><LINE>598</LINE></BUFFER02>
+ </LABELS>
+</ASSEMBLER_INFO>

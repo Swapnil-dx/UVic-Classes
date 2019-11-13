@@ -1,0 +1,94 @@
+
+<!-- saved from url=(0115)https://connex.csc.uvic.ca/access/content/group/16ac2e67-2bfc-47a2-9cca-8f7ea8900238/Lab%20Resources/Lab5/lab5.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css"> 
+    <title>lab5.html</title>
+    <link href="./lab5_files/tool_base.css" type="text/css" rel="stylesheet" media="all">
+    <link href="./lab5_files/tool.css" type="text/css" rel="stylesheet" media="all">
+    <script type="text/javascript" language="JavaScript" src="./lab5_files/headscripts.js"></script>
+    <style>body { padding: 5px !important; }</style>
+  </head>
+  <body>
+
+<title></title>
+<p>
+	<style type="text/css">
+table.center {margin-left:auto; margin-right:auto;}
+.centered {
+	text-align: center;
+}
+.important {
+	text-align: center;
+	color: #FF0000;
+}
+.userInput {
+	color: #FF0000;
+}	</style>
+</p>
+<h1 class="centered">
+	CSC 115 - Lab #5</h1>
+<h2>
+	Objectives</h2>
+<ol>
+	<li> Queues</li>
+	<li> Assignment Q&amp;A </li>
+</ol>
+<h2> 1. Queues</h2>
+<ul>
+	<li>
+		Queue operations:
+		<ul>
+			<li>enqueue(item) --- adds the item to the back of the queue (does NOT affect items in front). </li>
+			<li>dequeue() --- removes the item at the front of the queue and returns it. </li>
+			<li>peek() --- returns the item at the front of the queue (but does not change the contents of the queue). </li>
+			<li>isEmpty() --- returns true if the queue is empty, false otherwise.</li>
+			<li>dequeueAll() --- removes all items from the queue.</li>
+		</ul>
+	</li>
+	<li>
+		How does this work if we want to store our items in an array?<br>
+		Assume we have an array that can hold 4 items.<br>What will the array look like after the following operations?
+		<ul>
+			<li>enqueue(3); enqueue(5); enqueue(8);</li>
+			<li>dequeue(); enqueue(2); dequeue();</li>
+			<li>How do we keep track of items at the front of the queue vs the back? What are ways of implementing this? </li>
+			<li>dequeue(); enqueue(1); enqueue(3); enqueue(7); dequeue(); enqueue(9);</li>
+		</ul>
+</li></ul>
+<h4>Queue programming exercise: implementing a queue using a circular array</h4>
+<ol>
+	<li>Download <a href="https://connex.csc.uvic.ca/access/content/group/16ac2e67-2bfc-47a2-9cca-8f7ea8900238/Lab%20Resources/Lab5/CircularArrayQueue.java">CircularArrayQueue.java</a> and complete the methods. Testing has been started for you.</li>
+	<li>After completing a method un-comment out another chunk of code from main to test your method.
+</li></ol>
+
+<h2>2. Assignment 3 </h2>
+First, let's take a look at the TokenList.java file<br>
+Infix-to-postfix algorithm (page 375 to 378 in the textbook):
+<ol>
+	<li>
+		When you encounter an operand (#), append it to the postFixTokens TokenList.</li>
+	<li>
+		Push each "(" onto the stack
+	</li><li>
+		When you encounter an operator (+, -, etc), if the stack is empty, push it onto the stack<br>
+		<ul>
+		<li>If the stack is not empty, pop operators of greater or equal precedence from the stack and 
+		append them to the postFixTokens TokenList.
+		</li><li>Stop when you encounter an operator with lower precedence, a "(", or the stack is empty.
+		</li><li>Push the new operator onto the stack.
+	</li></ul>
+	</li><li>
+		When you encounter a ")", pop operators off the stack and append them to postFixTokens until
+		you find a "(" on the stack.
+	</li><li>
+		When you reach the end of the input, pop the remaining items from the stack and append them to postFixTokens.
+</li></ol>
+
+<hr>
+<p class="centered" id="validator">
+	<a href="http://validator.w3.org/check?uri=referer"><img alt="Valid HTML 4.01 Transitional" border="0" height="31" src="./lab5_files/valid-html401" width="88"></a> <a href="http://jigsaw.w3.org/css-validator/check/referer"> <img alt="Valid CSS!" src="./lab5_files/vcss" style="border:0;width:88px;height:31px"> </a></p>
+
+  
+
+
+</body></html>

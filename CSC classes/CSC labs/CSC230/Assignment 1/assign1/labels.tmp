@@ -1,0 +1,25 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>Unknown</DEVICE>
+ <WORKING_DIR>H:\CSC230\Assignment 1\assign1</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>H:\CSC230\Assignment 1\assign1\assign1.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>H:\CSC230\Assignment 1\assign1\assign1.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>H:\CSC230\Assignment 1\assign1\assign1.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>H:\CSC230\Assignment 1\assign1\assign1.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <loop1><FILE>H:\CSC230\Assignment 1\assign1\assign1.asm</FILE><LINE>69</LINE></loop1>
+  <RESULT><FILE>H:\CSC230\Assignment 1\assign1\assign1.asm</FILE><LINE>93</LINE></RESULT>
+  <stop><FILE>H:\CSC230\Assignment 1\assign1\assign1.asm</FILE><LINE>87</LINE></stop>
+ </LABELS>
+</ASSEMBLER_INFO>

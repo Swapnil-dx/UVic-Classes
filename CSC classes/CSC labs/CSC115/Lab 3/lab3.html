@@ -1,0 +1,87 @@
+
+<!-- saved from url=(0115)https://connex.csc.uvic.ca/access/content/group/16ac2e67-2bfc-47a2-9cca-8f7ea8900238/Lab%20Resources/Lab3/lab3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css"> 
+    <title>lab3.html</title>
+    <link href="./lab3_files/tool_base.css" type="text/css" rel="stylesheet" media="all">
+    <link href="./lab3_files/tool.css" type="text/css" rel="stylesheet" media="all">
+    <script type="text/javascript" language="JavaScript" src="./lab3_files/headscripts.js"></script>
+    <style>body { padding: 5px !important; }</style>
+  </head>
+  <body>
+
+<title></title>
+<p>
+	<style type="text/css">
+table.center {margin-left:auto; margin-right:auto;}
+.centered {
+	text-align: center;
+}
+.important {
+	text-align: center;
+	color: #FF0000;
+}
+.userInput {
+	color: #FF0000;
+}	</style>
+</p>
+<h1 class="centered">
+	CSC 115 - Lab #3</h1>
+<h2>
+	Objectives</h2>
+<ol>
+	<li> The List Interface</li>
+	<li> Interfaces - the other perspective</li>
+	<li> Assignment Q&amp;A </li>
+</ol>
+<h2> 1. The List Interface revisited</h2>
+<ul>
+	<li>
+		For assignment 2, the List Interface has the following method declarations:
+		<ul>
+			<li>add(item, index) --- adds the item to the list at the given position. </li>
+			<li>get(index) --- accesses the item at the given position in the list. </li>
+			<li>isEmpty() --- returns true if the list is empty, false otherwise. </li>
+			<li>size() --- the number of items currently in the list.</li>
+			<li>indexOf(item) --- returns the position of the given item in the list.</li>
+			<li>remove(index) --- removes the item in the list at the given index. </li>
+			<li>removeAll() --- empties the list.</li>
+			<li>remove(item) --- removes all occurences of an item in the list.</li>
+			<li>toString() --- the String (textual) representing of the list.</li>
+
+		</ul>
+	</li><li>
+		We can implement the List using an array or a linked-list:<br></li>
+	<img src="./lab3_files/arraysVsLinked.png" width="400" border="1"><br>
+</ul>
+<h4>Refresher Exercise - Write code for a removeFront method</h4>
+<ol>
+	<li>Write the removeFront method with an array-based implementation (with an array named <i>storage</i> and an int variable <i>count</i> </li>
+	<li>Write the removeFront method using a linked-list (with nodes <i>head</i> and <i>tail</i> and an int variable <i>size</i> </li>	
+</ol>
+<h2>
+	2. Using an implemented List</h2>
+<ul>
+	<li>
+		Assume another developer has implemented the List Interface creating a List that holds Strings.
+	</li><li>
+		A List has already been created for you that contains a number of items in it.
+	</li><li>
+		Your task is to use the List to complete a number of tasks:</li>
+		<ul>
+			<li>Search through the list to see if a certain word is contained in the list</li>
+			<li>Find out what the shortest word in the list is, and remove it</li>
+		</ul>
+	<li>Download <a href="https://connex.csc.uvic.ca/access/content/group/16ac2e67-2bfc-47a2-9cca-8f7ea8900238/Lab%20Resources/Lab3/StringList.java">StringList.java</a> and <a href="https://connex.csc.uvic.ca/access/content/group/16ac2e67-2bfc-47a2-9cca-8f7ea8900238/Lab%20Resources/Lab3/Lab3.java">Lab3.java</a> for this task.
+</li></ul>
+<h2>
+</h2><h2>3. Assignment 2 </h2>
+
+<hr>
+<p class="centered" id="validator">
+	<a href="http://validator.w3.org/check?uri=referer"><img alt="Valid HTML 4.01 Transitional" border="0" height="31" src="./lab3_files/valid-html401" width="88"></a> <a href="http://jigsaw.w3.org/css-validator/check/referer"> <img alt="Valid CSS!" src="./lab3_files/vcss" style="border:0;width:88px;height:31px"> </a></p>
+
+  
+
+
+</body></html>

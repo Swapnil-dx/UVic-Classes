@@ -1,0 +1,30 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega2560</DEVICE>
+ <WORKING_DIR>H:\CSC230\Lab 7\timers</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>H:\CSC230\Lab 7\timers\timers.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m2560def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>H:\CSC230\Lab 7\timers\timers.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>H:\CSC230\Lab 7\timers\timers.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>H:\CSC230\Lab 7\timers\timers.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main_loop><FILE>H:\CSC230\Lab 7\timers\timers.asm</FILE><LINE>164</LINE></main_loop>
+  <check_timer_3><FILE>H:\CSC230\Lab 7\timers\timers.asm</FILE><LINE>165</LINE></check_timer_3>
+  <set_leds><FILE>H:\CSC230\Lab 7\timers\timers.asm</FILE><LINE>202</LINE></set_leds>
+  <check_timer_4><FILE>H:\CSC230\Lab 7\timers\timers.asm</FILE><LINE>178</LINE></check_timer_4>
+  <check_timer_5><FILE>H:\CSC230\Lab 7\timers\timers.asm</FILE><LINE>190</LINE></check_timer_5>
+  <skip_overflow><FILE>H:\CSC230\Lab 7\timers\timers.asm</FILE><LINE>205</LINE></skip_overflow>
+  <stop><FILE>H:\CSC230\Lab 7\timers\timers.asm</FILE><LINE>208</LINE></stop>
+ </LABELS>
+</ASSEMBLER_INFO>

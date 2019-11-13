@@ -1,0 +1,9 @@
+
+AVRASM ver. 2.1.42  H:\CSC230\Lab 3\clearled\clearled.asm Wed Jan 24 13:15:20 2018
+
+
+EQU  PORTB        00000025
+EQU  DDRB         00000024
+EQU  PORTL        0000010b
+EQU  DDRL         0000010a
+CSEG done         0000000a

@@ -1,0 +1,15 @@
+
+AVRASM ver. 2.1.42  H:\CSC230\Lab 3\led\led.asm Wed Jan 24 13:47:25 2018
+
+
+EQU  PORTB        00000025
+EQU  DDRB         00000024
+EQU  PORTL        0000010b
+EQU  DDRL         0000010a
+CSEG loop1        0000000c
+CSEG loop2        0000000e
+CSEG loop3        00000010
+CSEG loop1_2      00000018
+CSEG loop2_2      0000001a
+CSEG loop3_3      0000001c
+CSEG done         00000029

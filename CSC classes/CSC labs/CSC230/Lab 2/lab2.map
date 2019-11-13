@@ -1,0 +1,9 @@
+
+AVRASM ver. 2.1.42  H:\CSC230\Lab 2\lab2.asm Wed Jan 17 13:45:06 2018
+
+
+DEF  number1      r16
+DEF  number2      r17
+DEF  number3      r18
+DEF  number4      r19
+CSEG done         00000008

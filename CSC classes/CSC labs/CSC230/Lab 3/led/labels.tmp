@@ -1,0 +1,29 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>Unknown</DEVICE>
+ <WORKING_DIR>H:\CSC230\Lab 3\led</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>H:\CSC230\Lab 3\led\led.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>H:\CSC230\Lab 3\led\led.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>H:\CSC230\Lab 3\led\led.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>H:\CSC230\Lab 3\led\led.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <loop1><FILE>H:\CSC230\Lab 3\led\led.asm</FILE><LINE>18</LINE></loop1>
+  <loop2><FILE>H:\CSC230\Lab 3\led\led.asm</FILE><LINE>22</LINE></loop2>
+  <loop3><FILE>H:\CSC230\Lab 3\led\led.asm</FILE><LINE>26</LINE></loop3>
+  <loop1_2><FILE>H:\CSC230\Lab 3\led\led.asm</FILE><LINE>39</LINE></loop1_2>
+  <loop2_2><FILE>H:\CSC230\Lab 3\led\led.asm</FILE><LINE>43</LINE></loop2_2>
+  <loop3_3><FILE>H:\CSC230\Lab 3\led\led.asm</FILE><LINE>47</LINE></loop3_3>
+  <done><FILE>H:\CSC230\Lab 3\led\led.asm</FILE><LINE>63</LINE></done>
+ </LABELS>
+</ASSEMBLER_INFO>

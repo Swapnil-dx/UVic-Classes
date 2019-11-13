@@ -1,0 +1,7 @@
+
+AVRASM ver. 2.1.42  H:\CSC230\Lab 3\Lab3\lab3.asm Wed Jan 24 12:51:58 2018
+
+
+DEF  count        r17
+CSEG loop         00000001
+CSEG done         00000005

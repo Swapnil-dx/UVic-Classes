@@ -1,0 +1,4 @@
+3
+Hero	1	We can be Heroes
+Hero	0	Oh-oh-oh-ohh, oh-oh-oh-ohh, 
+Hero	2	just for one day

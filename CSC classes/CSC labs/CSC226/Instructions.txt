@@ -1,0 +1,5 @@
+Compile with 
+  javac PrefixCode.java
+  java PrefixCode
+
+If you switch files, delete the ".class" files before recompiling.

@@ -1,0 +1,174 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Swapnil Daxini (V00861672) CSC349A Assignment 6</title><meta name="generator" content="MATLAB 9.5"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-11-29"><meta name="DC.source" content="A6Q3.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Swapnil Daxini (V00861672) CSC349A Assignment 6</h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Question 3</a></li><li><a href="#2">Part A</a></li><li><a href="#3">Part B</a></li></ul></div><h2 id="1">Question 3</h2><h2 id="2">Part A</h2><pre class="codeinput">type <span class="string">trap.m</span>
+</pre><pre class="codeoutput">
+function trap(a, b, maxiter, tol, f)
+m = 1;
+x = linspace(a, b, m+1);
+y = f(x);
+approx = trapz(x, y);
+disp('      m     integral approximation');
+fprintf('  %5.0f %16.10f \n ', m, approx);
+
+for i = 1 : maxiter
+    m = 2^i;
+    oldapprox = approx;
+    x = linspace ( a, b, m+1) ;
+    y = f(x);
+    approx = trapz(x, y);
+    
+    fprintf(' %5.0f %16.10f \n ', m, approx);
+    if abs(approx - oldapprox) &lt; tol
+        return
+    end
+end
+fprintf('Did not converge in %g iterations', maxiter)
+</pre><h2 id="3">Part B</h2><pre class="codeinput">type <span class="string">f1.m</span>
+
+<span class="comment">% Solve first integral</span>
+trap(0.1, 3, 20, 10^-6, @f1)
+
+type <span class="string">f2.m</span>
+
+<span class="comment">% Solve second integral</span>
+trap(0, 1, 20, 10^-10, @f2)
+</pre><pre class="codeoutput">
+function y = f1(x)
+
+    y = sin(1./x);
+
+end
+      m     integral approximation
+      1    -0.3143983004 
+      2     0.7147254605 
+      4     1.3447434609 
+      8     1.5589483255 
+     16     1.4776583126 
+     32     1.4679626280 
+     64     1.5197926883 
+    128     1.5355585774 
+    256     1.5386514853 
+    512     1.5393496800 
+   1024     1.5395196356 
+   2048     1.5395618423 
+   4096     1.5395723764 
+   8192     1.5395750089 
+  16384     1.5395756669 
+ 
+function y = f2(x)
+
+    y = exp(3.*x)./sqrt(x.^3+1);
+
+end
+      m     integral approximation
+      1     7.6013096811 
+      2     5.9133433291 
+      4     5.4710046573 
+      8     5.3585418274 
+     16     5.3303053079 
+     32     5.3232385483 
+     64     5.3214713803 
+    128     5.3210295584 
+    256     5.3209191010 
+    512     5.3208914866 
+   1024     5.3208845830 
+   2048     5.3208828571 
+   4096     5.3208824256 
+   8192     5.3208823177 
+  16384     5.3208822908 
+  32768     5.3208822840 
+  65536     5.3208822823 
+  131072     5.3208822819 
+  262144     5.3208822818 
+  524288     5.3208822818 
+ </pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Swapnil Daxini (V00861672) CSC349A Assignment 6
+
+%% Question 3
+
+%% Part A
+
+type trap.m
+
+%% Part B
+
+type f1.m
+
+% Solve first integral
+trap(0.1, 3, 20, 10^-6, @f1)
+
+type f2.m
+
+% Solve second integral
+trap(0, 1, 20, 10^-10, @f2)
+
+
+##### SOURCE END #####
+--></body></html>

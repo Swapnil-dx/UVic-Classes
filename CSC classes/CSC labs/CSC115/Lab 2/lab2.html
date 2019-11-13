@@ -1,0 +1,126 @@
+
+<!-- saved from url=(0115)https://connex.csc.uvic.ca/access/content/group/16ac2e67-2bfc-47a2-9cca-8f7ea8900238/Lab%20Resources/Lab2/lab2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css"> 
+    <title>lab2.html</title>
+    <link href="./lab2_files/tool_base.css" type="text/css" rel="stylesheet" media="all">
+    <link href="./lab2_files/tool.css" type="text/css" rel="stylesheet" media="all">
+    <script type="text/javascript" language="JavaScript" src="./lab2_files/headscripts.js"></script>
+    <style>body { padding: 5px !important; }</style>
+  </head>
+  <body>
+
+<title></title>
+<p>
+	<style type="text/css">
+table.center {margin-left:auto; margin-right:auto;}
+.centered {
+	text-align: center;
+}
+.important {
+	text-align: center;
+	color: #FF0000;
+}
+.userInput {
+	color: #FF0000;
+}	</style>
+</p>
+<h1 class="centered">
+	CSC 115 - Lab #2</h1>
+<h2>
+	Objectives</h2>
+<ol>
+	<li> The List Interface</li>
+	<li> Linked Lists</li>
+	<li> Assignment Overview </li>
+</ol>
+<h2> 1. The List Interface</h2>
+<ul>
+	<li>
+		<i>Interface???</i> What is an Interface?</li>
+		<ul>
+			<li>
+				What is the main objective of using an Interface?</li>
+			<li>
+				Are they used in practice? Why?</li>
+		</ul>
+	
+	<li>
+		The List Interface:
+		<ul>
+			<li>add(item, index) --- adds the item to the list at the given position. </li>
+			<li>get(index) --- accesses the item at the given position in the list. </li>
+			<li>isEmpty() --- returns true if the list is empty, false otherwise. </li>
+			<li>size() --- the number of items currently in the list.</li>
+			<li>indexOf(item) --- returns the position of the given item in the list.</li>
+			<li>remove(index) --- removes the item in the list at the given index. </li>
+			<li>removeAll() --- empties the list.</li>
+			<li>remove(item) --- removes all occurences of an item in the list.</li>
+			<li>toString() --- the String (textual) representing of the list.</li>
+
+		</ul>
+	</li><li>
+		In some ways, BingoCalls was almost an implementation of the List interface</li>
+		<ul>
+			<li>Let's look at a sample solution to BingoCalls.java </li>
+		</ul>
+	<li>
+		<font size="4">Generics</font></li>
+		<ul>
+			<li>The List interface also uses something called <i>generics</i> </li>
+			<li>From wikipedia: "They allow a type or method to operate on objects of various types.."</li>
+			<li>Basically, this let's us create Lists to hold different types of things (BingoBalls, Strings, or other Objects)
+		</li></ul>
+</ul>
+<h4>List Exercise - Assume we are creating a List of BingoBalls</h4>
+<ol>
+	<li>What would our List look like after the following calls: add(B7, 0), add(O71, 0), add(B12, 1), add(I19, 3), add(B12, 0).</li>
+	<li>What value would indexOf(B7) return? What about size()? isEmpty()? get(2)?</li>
+	<li>What does the List look like after the call remove(1)? What about after remove(B12)?</li>
+</ol>
+<h2>
+	2. Linked Lists</h2>
+<ul>
+	<li>
+		So far (in CSC110 at least ) we used <b>arrays</b> to store collections of data for us. A <b>linked list</b> is another way of representing a collection of data.
+	</li><li>
+		Linked Lists use Nodes. Here is what code to a Node that stores a String might look like:</li>
+	
+	<img src="./lab2_files/Node.png" width="400"><br>
+	<br>
+	<li> As you can see from the image, Nodes stores an item and have a link to another Node. 
+		<br>This allows a programmer to organize Nodes in a List quite easily.</li>
+	<br>
+	<li>We now have two ways of representing items:</li>
+	<img src="./lab2_files/arraysVsLinked.png" width="400" border="1"><br>
+	<br>
+	<li>Java code to create each representation looks like the following:</li>
+	<img src="./lab2_files/equivalentLists.png" width="650"><br>
+	<br>
+	<li> We can do the same List operations regardless of whether List is implemented in an array or a linked list.
+	</li><li>For example, to loop through all of the elements in a list:
+	<img src="./lab2_files/traversal.png" width="900"><br>
+	<br>
+	</li><li> One of the main objectives of CSC115 is get you to think about the reasons to choose a certain implementation.</li>
+			<ul>
+			<li>Let's assume we have a List of millions of elements..</li>
+			<li>Which List functions would have different running times using an array vs. a linked list?</li>
+		</ul>
+</ul>
+<h4>List Exercise</h4>
+<ol>
+	<li>Write a print method that prints all of the items in a Linked List.</li>
+	<li>Write an add method that accepts a String and an index and inserts a Node (using the class shown above) into a List.</li>
+	<li>Write a remove method that removes an item at a given index in a Linked List.</li>
+</ol>
+<h2>
+</h2><h2>3. Assignment 2 </h2>
+
+<hr>
+<p class="centered" id="validator">
+	<a href="http://validator.w3.org/check?uri=referer"><img alt="Valid HTML 4.01 Transitional" border="0" height="31" src="./lab2_files/valid-html401" width="88"></a> <a href="http://jigsaw.w3.org/css-validator/check/referer"> <img alt="Valid CSS!" src="./lab2_files/vcss" style="border:0;width:88px;height:31px"> </a></p>
+
+  
+
+
+</body></html>

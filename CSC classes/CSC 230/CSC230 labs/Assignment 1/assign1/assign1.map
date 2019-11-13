@@ -1,0 +1,13 @@
+
+AVRASM ver. 2.1.42  H:\CSC230\Assignment 1\assign1\assign1.asm Mon Feb 05 18:10:27 2018
+
+
+DEF  MH           r17
+DEF  ML           r16
+DEF  NH           r19
+DEF  NL           r18
+EQU  M            00004255
+EQU  N            0000001d
+CSEG loop1        00000005
+DSEG RESULT       00000200
+CSEG stop         0000000b

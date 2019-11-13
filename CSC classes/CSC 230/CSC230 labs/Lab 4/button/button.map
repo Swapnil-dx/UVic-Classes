@@ -1,0 +1,30 @@
+
+AVRASM ver. 2.1.42  H:\CSC230\Lab 4\button\button.asm Wed Jan 31 13:38:28 2018
+
+
+DEF  DATAH        r27
+DEF  DATAL        r26
+DEF  BOUNDARY_H   r1
+DEF  BOUNDARY_L   r0
+EQU  DDRB         00000024
+EQU  PORTB        00000025
+EQU  DDRL         0000010a
+EQU  PORTL        0000010b
+EQU  ADCSRA       0000007a
+EQU  ADCSRB       0000007b
+EQU  ADMUX        0000007c
+EQU  ADCL         00000078
+EQU  ADCH         00000079
+EQU  RIGHT        00000032
+EQU  UP           000000c3
+EQU  DOWN         0000017c
+EQU  LEFT         0000022b
+EQU  SELECT       00000316
+CSEG loop         00000012
+CSEG check_button 00000020
+CSEG delay        00000033
+CSEG wait         00000025
+CSEG skip         00000032
+CSEG del1         00000033
+CSEG del2         00000035
+CSEG del3         00000037

@@ -1,0 +1,42 @@
+CSC 230 Lab1
+Student Number: V00861672
+Name: Swapnil Daxini
+
+3.There are 163 students registered in CSc 230, what is the minimum number of bits needed to represent this number in binary (assume it is an unsigned number)?
+
+A: 8 bits
+
+
+4.Convert the following positive integer numbers:
+(two of them, ask the lab instructor)
+
+A: c) 0b100,1101 to decimal: 77
+   e) 1012 to binary: 1111110100
+   f) 1012 to octal: 0o1764
+   m) 51 to hexadecimal: 0x33
+   
+
+
+5.Convert negative integer numbers using  2’s complement notation.
+(two of them, ask the lab instructor)
+
+a) -63 to binary: 0b11000001
+   -63 to hex: 0xC1
+
+f) 0b001110 to decimal: 14   
+
+
+6.What are the minimum and maximum values represented by a 4-bit binary number: a) as an unsigned number? B) as a 2’s complement number? How about 8 bits, 16 bits, 12 bits?
+a) 4-bit: Max: 15, Min: 0
+   8-bit: Max: 255, Min: 0
+   16-bit: Max: 65535, Min: 0
+   12-bit: Max: 4095, Min: 0
+b) 4-bit: Max: 7, Min: -8
+   8-bit: Max: 127, Min: -128
+   16-bit: Max: 32767, Min: -32768
+   12-bit: Max: 2047, Min: -2048
+
+
+10.What is the mask to be used if we want to clear bits 2,3,5 and 8 of a byte?
+A: Let the bits be numbered starting from the right (i.e. 87654321)
+AND with 0b01101001

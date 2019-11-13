@@ -1,0 +1,6 @@
+
+AVRASM ver. 2.1.42  H:\CSC230\subroutine\subroutine.asm Wed Jan 31 12:42:34 2018
+
+
+CSEG addOne       00000006
+CSEG done         00000004

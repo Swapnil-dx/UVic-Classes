@@ -1,0 +1,2 @@
+@ECHO OFF
+"C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -S "C:\Users\swapn\Desktop\CSC 230\Assignment 2\a2_morse\labels.tmp" -fI -W+ie -C V3 -o "C:\Users\swapn\Desktop\CSC 230\Assignment 2\a2_morse\a2_morse.hex" -d "C:\Users\swapn\Desktop\CSC 230\Assignment 2\a2_morse\a2_morse.obj" -e "C:\Users\swapn\Desktop\CSC 230\Assignment 2\a2_morse\a2_morse.eep" -m "C:\Users\swapn\Desktop\CSC 230\Assignment 2\a2_morse\a2_morse.map" "C:\Users\swapn\Desktop\CSC 230\Assignment 2\a2_morse\a2_morse.asm"
